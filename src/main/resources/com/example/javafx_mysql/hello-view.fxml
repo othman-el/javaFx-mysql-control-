@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="325.0" prefWidth="600" style="-fx-background-color: black;" styleClass="main-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_mysql.HelloController">
+    <children>
+        <Label layoutX="176.0" layoutY="21.0" styleClass="title-label" text="Gestion des Equipments" textFill="WHITE">
+            <font>
+                <Font name="Eras Demi ITC" size="24.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="118.0" layoutY="78.0" text="nom de l'équipment" textFill="WHITE" />
+        <TextField id="txtName" fx:id="nomField" layoutX="241.0" layoutY="74.0" prefHeight="25.0" prefWidth="153.0" />
+
+        <Label layoutX="182.0" layoutY="129.0" text="marque" textFill="WHITE" />
+        <TextField id="txtmarque" fx:id="marqueField" layoutX="241.0" layoutY="125.0" prefHeight="25.0" prefWidth="153.0" />
+
+        <Label layoutX="151.0" layoutY="178.0" text="année d'achat" textFill="WHITE" />
+        <DatePicker fx:id="anneeField" layoutX="241.0" layoutY="174.0" prefHeight="26.0" prefWidth="154.0" />
+
+        <Button id="btnSave" layoutX="318.0" layoutY="237.0" onAction="#SaveClick" style="-fx-background-color: #702963;" styleClass="save-button" text="Enregistrer" textFill="WHITE" />
+    </children>
+</AnchorPane>
